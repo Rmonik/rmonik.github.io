@@ -320,6 +320,7 @@ body {
     background-color: black;
     width: 100vw;
     color: white;
+    overflow:hidden;
 }
 
 .intro__inner {
@@ -338,18 +339,25 @@ body {
 }
 
 .intro__navigation {
+
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin: 1em;
-    width: 25em;
+    width: 19em;
+    @media(min-width: 768px) {
+        width: 25em;
+    }
 }
 
 .intro__navitem {
     float: left;
-    padding: 0.4em 1.8em;
+    padding: 0.4em 0.8em;
     height: 1.3em;
     line-height: 1.3em;
+    @media(min-width: 768px) {
+        padding: 0.4em 1.8em;
+    }
 }
 
 .intro__navitem--dot {
