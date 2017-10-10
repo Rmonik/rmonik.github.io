@@ -192,11 +192,19 @@ body {
 }
 
 .landing__logo {
+
     top: 15vh;
     z-index: 20;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    > img {
+        height: 40vh;
+        width: auto;
+        @media(min-width: 768px) {
+            height: 50vh;
+        }
+    }
 }
 
 .landing__title {
@@ -209,6 +217,9 @@ body {
         height: auto;
         width: 50vh;
     }
+    @media(min-width: 768px) {
+        top: 65vh;
+    }
 }
 
 .landing__description {
@@ -220,8 +231,12 @@ body {
     color: white;
     text-align: center;
     font-size: 24px;
-    top: 80vh;
+    top: 75vh;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    @media(min-width: 768px) {
+        top: 80vh;
+
+    }
 }
 
 .landing__socials {
