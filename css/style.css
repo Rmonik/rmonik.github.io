@@ -82,6 +82,37 @@ body {
   left: 0; }
 
 /* line 94, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+.rotate {
+  z-index: 50000;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: none; }
+  /* line 102, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+  .rotate > p {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translateY(-50%);
+    color: white;
+    width: 67%;
+    font-size: 3rem; }
+  @media (max-width: 768px) and (orientation: landscape) {
+    /* line 94, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    .rotate {
+      display: block; } }
+
+/* line 117, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+.rotate__icon {
+  color: white;
+  width: 33%;
+  height: 100%;
+  text-align: center;
+  line-height: 100vh;
+  font-size: 5rem; }
+
+/* line 126, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .navigation {
   z-index: 5000;
   position: fixed;
@@ -89,7 +120,7 @@ body {
   right: 0;
   color: white; }
 
-/* line 102, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 134, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .navigation__hamburger {
   z-index: 5001;
   font-size: 3rem;
@@ -99,15 +130,15 @@ body {
   right: 1rem;
   color: white;
   opacity: 0.6; }
-  /* line 111, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+  /* line 143, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
   .navigation__hamburger:hover {
     opacity: 1; }
   @media (min-width: 1024px) {
-    /* line 102, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 134, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .navigation__hamburger {
       font-size: 2rem; } }
 
-/* line 119, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 151, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .navigation__menu {
   display: none;
   position: absolute;
@@ -117,13 +148,13 @@ body {
   height: 100vh;
   width: 100vw; }
   @media (min-width: 768px) {
-    /* line 119, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 151, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .navigation__menu {
       background-color: rgba(0, 0, 0, 0.7);
       width: 20rem;
       height: 25rem; } }
 
-/* line 134, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 166, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .innermenu {
   position: absolute;
   top: 20%;
@@ -132,44 +163,44 @@ body {
   overflow: auto;
   text-align: center; }
   @media (min-width: 768px) {
-    /* line 134, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 166, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .innermenu {
       top: 10%;
       height: 80%; } }
 
-/* line 148, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 180, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .innermenu__item {
   position: relative;
   overflow: auto;
   float: left; }
 
-/* line 155, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 187, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .innermenu__item--logo {
   position: relative;
   height: 25%;
   width: 100%; }
-  /* line 159, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+  /* line 191, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
   .innermenu__item--logo > img {
     position: relative;
     height: 100%; }
 
-/* line 165, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 197, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .innermenu__item--social {
   height: 15%;
   width: 16.66%; }
-  /* line 168, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+  /* line 200, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
   .innermenu__item--social i {
     font-size: 1.3rem;
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
 
-/* line 176, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 208, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .innermenu__item--link {
   height: 15%;
   width: 100%; }
 
-/* line 181, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 213, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .par {
   width: 100%;
   text-align: center;
@@ -177,44 +208,44 @@ body {
   top: 50%;
   transform: translateY(-50%); }
 
-/* line 189, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 221, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing {
   width: 100vw;
   height: 100vh; }
 
-/* line 194, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 226, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__logo {
   top: 15vh;
   z-index: 20;
   position: absolute;
   left: 50%;
   transform: translateX(-50%); }
-  /* line 201, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+  /* line 233, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
   .landing__logo > img {
     height: 40vh;
     width: auto; }
     @media (min-width: 768px) {
-      /* line 201, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+      /* line 233, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
       .landing__logo > img {
         height: 50vh; } }
 
-/* line 210, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 242, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__title {
   z-index: 20;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 60vh; }
-  /* line 216, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+  /* line 248, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
   .landing__title img {
     height: auto;
     width: 50vh; }
   @media (min-width: 768px) {
-    /* line 210, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 242, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .landing__title {
       top: 65vh; } }
 
-/* line 225, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 257, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__description {
   position: absolute;
   z-index: 20;
@@ -227,11 +258,11 @@ body {
   top: 75vh;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
   @media (min-width: 768px) {
-    /* line 225, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 257, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .landing__description {
       top: 80vh; } }
 
-/* line 242, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 274, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__socials {
   position: absolute;
   z-index: 20;
@@ -244,11 +275,11 @@ body {
   top: 90vh;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
   @media (min-width: 768px) {
-    /* line 242, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 274, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .landing__socials {
       top: 85vh; } }
 
-/* line 258, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 290, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__sociallink {
   float: left;
   line-height: 1.8em;
@@ -257,11 +288,11 @@ body {
   margin: 0 0.3em;
   border-radius: 100%;
   font-size: 1rem; }
-  /* line 266, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+  /* line 298, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
   .landing__sociallink:hover {
     background-color: rgba(0, 0, 0, 0.5); }
 
-/* line 271, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 303, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__caret {
   position: absolute;
   z-index: 20;
@@ -273,14 +304,14 @@ body {
   top: 95vh;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
 
-/* line 283, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 315, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__background {
   position: absolute;
   width: 100vw;
   height: 100vh;
   overflow: hidden; }
 
-/* line 290, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 322, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__layer {
   will-change: transform;
   position: absolute;
@@ -289,39 +320,39 @@ body {
   height: 100%;
   width: 100%; }
 
-/* line 299, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 331, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__layer--sky {
   background: url(/res/images/mountains/mountain-sky.svg);
   background-size: cover;
   background-position: top left;
   z-index: 10; }
 
-/* line 306, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 338, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__layer--stars {
   z-index: 11; }
 
-/* line 310, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 342, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__layer--back {
   background: url(/res/images/mountains/mountain-top.svg);
   background-size: cover;
   background-position: top left;
   z-index: 12; }
 
-/* line 317, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 349, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__layer--middle {
   background: url(/res/images/mountains/mountain-middle.svg);
   background-size: cover;
   background-position: top left;
   z-index: 13; }
 
-/* line 324, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 356, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .landing__layer--front {
   background: url(/res/images/mountains/mountain-bottom.svg);
   background-size: cover;
   background-position: top left;
   z-index: 14; }
 
-/* line 331, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 363, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .intro {
   z-index: 100;
   position: relative;
@@ -331,24 +362,24 @@ body {
   color: white;
   overflow: hidden; }
 
-/* line 341, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 373, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .intro__inner {
   margin: 2.5em 2em 6.5em 2em;
   text-align: center; }
   @media (min-width: 768px) {
-    /* line 341, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 373, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .intro__inner {
       margin: 2.5em 8em 6.5em 8em; } }
   @media (min-width: 1024px) {
-    /* line 341, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 373, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .intro__inner {
       margin: 2.5em 14em 6.5em 14em; } }
 
-/* line 352, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 384, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .description {
   margin: 1em; }
 
-/* line 356, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 388, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .intro__navigation {
   position: absolute;
   left: 50%;
@@ -356,124 +387,124 @@ body {
   margin: 1em;
   width: 19em; }
   @media (min-width: 768px) {
-    /* line 356, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 388, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .intro__navigation {
       width: 25em; } }
 
-/* line 368, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 400, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .intro__navitem {
   float: left;
   padding: 0.4em 0.8em;
   height: 1.3em;
   line-height: 1.3em; }
   @media (min-width: 768px) {
-    /* line 368, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 400, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .intro__navitem {
       padding: 0.4em 1.8em; } }
 
-/* line 378, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 410, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .intro__navitem--dot {
   font-size: 0.3em;
   transform: translateY(1.4em); }
 
-/* line 383, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 415, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .designvalues {
   background-color: white;
   z-index: 100;
   font-family: Courier, monospace; }
 
-/* line 389, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 421, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .designvalue {
   position: relative; }
 
-/* line 393, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 425, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .designvalue__item {
   position: relative; }
 
-/* line 398, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 430, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .designvalue__item--pic {
   height: 100vw;
   width: 100vw;
   background-color: grey; }
   @media (min-width: 768px) {
-    /* line 398, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 430, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .designvalue__item--pic {
       width: 50vw;
       height: 50vw; } }
   @media (min-width: 1024px) {
-    /* line 398, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 430, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .designvalue__item--pic {
       width: 33vw;
       height: 33vw; } }
 
-/* line 412, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 444, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .designvalue__item--text {
   width: 100vw;
   height: auto; }
   @media (min-width: 768px) {
-    /* line 412, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 444, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .designvalue__item--text {
       width: 50vw;
       height: 50vw; } }
   @media (min-width: 1024px) {
-    /* line 412, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 444, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .designvalue__item--text {
       width: 67vw;
       height: 33vw; } }
 
-/* line 425, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 457, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .designvalue__item--left {
   text-align: center; }
   @media (min-width: 768px) {
-    /* line 425, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 457, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .designvalue__item--left {
       text-align: right;
       float: left; } }
 
-/* line 433, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 465, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .designvalue__item--right {
   text-align: center; }
   @media (min-width: 768px) {
-    /* line 433, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 465, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .designvalue__item--right {
       text-align: left;
       float: right; } }
 
-/* line 441, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 473, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .textwrapper {
   width: 100%;
   padding: 4rem 0; }
   @media (min-width: 768px) {
-    /* line 441, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 473, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .textwrapper {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       padding: 0; } }
   @media (min-width: 1024px) {
-    /* line 441, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 473, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .textwrapper {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       padding: 0; } }
 
-/* line 458, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 490, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .textwrapper__par {
   padding: 1rem 2.5rem; }
   @media (min-width: 768px) {
-    /* line 458, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 490, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .textwrapper__par {
       padding: 1rem 5rem; } }
 
-/* line 465, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 497, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .resume {
   z-index: 100;
   position: relative;
   background-color: black;
   overflow: auto; }
 
-/* line 472, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 504, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .profilepic {
   position: relative;
   left: 50%;
@@ -486,7 +517,7 @@ body {
   background-size: cover;
   background-position: 50% 50%; }
   @media (min-width: 768px) {
-    /* line 472, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 504, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .profilepic {
       left: auto;
       top: 5vh;
@@ -496,7 +527,7 @@ body {
       height: 20vw;
       width: 20vw; } }
 
-/* line 494, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 526, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .info {
   position: relative;
   left: 50%;
@@ -504,7 +535,7 @@ body {
   color: white;
   width: 85vw; }
   @media (min-width: 768px) {
-    /* line 494, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 526, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .info {
       width: 65vw;
       left: auto;
@@ -512,35 +543,35 @@ body {
       float: left;
       margin: 5vw 5vw 5vw 5vw; } }
 
-/* line 509, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 541, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .info__title {
   font-size: 24px; }
 
-/* line 513, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 545, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .info__subtitle {
   margin: 1em 0; }
 
-/* line 517, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 549, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .info__bullets {
   text-indent: 1em;
   margin: 0 0 0 3em; }
-  /* line 520, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+  /* line 552, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
   .info__bullets ul {
     list-style: disc; }
-    /* line 522, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 554, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .info__bullets ul li {
       line-height: 2.3em; }
 
-/* line 528, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 560, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .info__downloads {
   margin-top: 2rem;
   position: relative; }
   @media (min-width: 1024px) {
-    /* line 528, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 560, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .info__downloads {
       width: 51rem; } }
 
-/* line 536, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 568, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .downloadbutton {
   position: relative;
   left: 50%;
@@ -549,14 +580,14 @@ body {
   height: 3.5rem;
   margin-bottom: 1rem; }
   @media (min-width: 768px) {
-    /* line 536, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 568, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .downloadbutton {
       left: auto;
       transform: none;
       float: left;
       margin: 1rem 3rem 0 3rem; } }
 
-/* line 551, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 583, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .downloadbutton__button {
   background-color: white;
   color: black;
@@ -566,7 +597,7 @@ body {
   text-align: center;
   font-weight: 300; }
 
-/* line 561, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 593, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .downloadbutton__subbutton {
   position: relative;
   top: 0.2rem;
@@ -577,12 +608,12 @@ body {
   text-align: center;
   font-size: 10px; }
   @media (min-width: 1024px) {
-    /* line 561, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 593, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .downloadbutton__subbutton {
       position: relative;
       margin: 0; } }
 
-/* line 576, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 608, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .music {
   font-weight: 300;
   z-index: 100;
@@ -591,7 +622,7 @@ body {
   background-position: center center;
   background-size: cover; }
 
-/* line 585, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 617, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .music__text {
   position: relative;
   padding: 2.5rem 3.5rem;
@@ -603,12 +634,12 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center; }
   @media (min-width: 768px) {
-    /* line 585, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 617, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .music__text {
       width: 50vw;
       margin: 15vw 0; } }
 
-/* line 601, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 633, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .music__links {
   overflow: auto;
   margin-top: 1rem;
@@ -617,21 +648,21 @@ body {
   transform: translateX(-50%);
   width: 10rem; }
 
-/* line 610, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 642, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .music__link {
   width: 50%;
   font-size: 3rem;
   float: left; }
 
-/* line 616, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 648, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .music__link--soundcloud:hover {
   color: #FF6000; }
 
-/* line 620, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 652, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .music__link--bandcamp:hover {
   color: #639AA9; }
 
-/* line 624, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 656, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .footer {
   background-color: black;
   overflow: auto;
@@ -639,17 +670,17 @@ body {
   color: white;
   padding: 2rem; }
 
-/* line 632, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 664, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .contact {
   z-index: 100;
   font-size: 24px;
   margin-bottom: 1rem; }
 
-/* line 638, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 670, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .contactitem {
   margin: 1rem; }
 
-/* line 646, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 678, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .footer__line {
   left: 50%;
   transform: translateX(-50%);
@@ -657,11 +688,11 @@ body {
   width: 65vw;
   border-top: 1px solid white; }
   @media (min-width: 768px) {
-    /* line 646, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+    /* line 678, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
     .footer__line {
       width: 35vw; } }
 
-/* line 657, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
+/* line 689, /Users/iMilan/DEV/PROJECTS/Portfolio/css/style.scss */
 .disclaimer {
   margin-top: 1rem; }
 
