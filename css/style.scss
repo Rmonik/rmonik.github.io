@@ -439,6 +439,10 @@ body {
         height: 33vw;
     }
     background-color:grey;
+    > img {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .designvalue__item--text {
