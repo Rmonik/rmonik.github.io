@@ -1,0 +1,179 @@
+/*******************   RESETS   *******************/
+
+@import "normalize.css";
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        color: #000 !important;
+        text-shadow: none !important;
+        background: transparent !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}
+
+
+
+a {
+    text-decoration: inherit;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*******************   DEFAULTS   *******************/
+
+/* Variables */
+
+$font-serif: "Lucida Bright",
+Georgia,
+serif;
+$font-sans-serif: "Lucida Grande",
+Helvetica,
+sans-serif;
+$font-monospace: Consolas,
+Monaco,
+monospace;
+
+/* Classes & helper elements */
+
+.pageBreak {
+    // Use on <br> element to split things on new lines for mobile
+    display: none;
+}
+
+.clearFix {
+    clear: both;
+}
+
+/* Global style */
+
+body {
+    font-size: 14px;
+    font-family: $font-sans-serif;
+}
+
+
+canvas {
+    background-color: black;
+}
+
+/************************************************************/
+
+#wrapper {
+    font-family: "Raleway";
+}
+
+.helpwindowbutton {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    z-index: 100;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.2rem 0.8rem;
+    box-shadow: -2px 2px 5px  rgba(0,0,0,0.3);
+    border-radius: 3px ;
+}
+
+.helpwindow {
+    display: none;
+    padding: 3rem;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    width: 100vw; 
+    z-index: 10;
+    > h1 {
+        text-align: center;
+    }
+    
+}
+
+.helpwindow__tips {
+    padding: 2rem;
+    border: 1px solid black;
+    display: inline-block;
+    list-style: disc outside none;
+    > li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.mainPage {
+    position: relative;
+    height: 100vh;
+}
+
+.header {
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        @media (max-width: 768px) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 15vh;
+    height: 55vh;
+    text-align: center;
+}
+
+.chord {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-size: 10rem;
+    @media (max-width: 768px) {
+        font-size: 5rem;
+    }
+}
+
+.instructions {
+    position: absolute;
+    bottom: 0.5rem;
+    width: 100%;
+    font-style: italic;
+}
+
+.controls {
+    padding: 0 1rem;
+    position: absolute;
+    top: 70vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgba(230, 230, 230, 1);
+}

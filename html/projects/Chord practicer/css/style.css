@@ -1,0 +1,158 @@
+/*******************   RESETS   *******************/
+@import url(normalize.css);
+/* line 4, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 11, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+@media print {
+  /* line 18, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+  *,
+  *:before,
+  *:after {
+    color: #000 !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+  /* line 27, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+  /* line 31, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; } }
+
+/* line 38, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+a {
+  text-decoration: inherit; }
+
+/* line 42, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/*******************   DEFAULTS   *******************/
+/* Variables */
+/* Classes & helper elements */
+/* line 66, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+.pageBreak {
+  display: none; }
+
+/* line 71, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+.clearFix {
+  clear: both; }
+
+/* Global style */
+/* line 77, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+body {
+  font-size: 14px;
+  font-family: "Lucida Grande", Helvetica, sans-serif; }
+
+/* line 83, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+canvas {
+  background-color: black; }
+
+/************************************************************/
+/* line 89, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+#wrapper {
+  font-family: "Raleway"; }
+
+/* line 93, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+.helpwindowbutton {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  z-index: 100;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.2rem 0.8rem;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px; }
+
+/* line 106, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+.helpwindow {
+  display: none;
+  padding: 3rem;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10; }
+  /* line 115, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+  .helpwindow > h1 {
+    text-align: center; }
+
+/* line 121, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+.helpwindow__tips {
+  padding: 2rem;
+  border: 1px solid black;
+  display: inline-block;
+  list-style: disc outside none; }
+  /* line 126, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+  .helpwindow__tips > li {
+    margin-bottom: 0.5rem; }
+
+/* line 131, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+.mainPage {
+  position: relative;
+  height: 100vh; }
+
+/* line 137, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+.header h1 {
+  text-align: center;
+  font-size: 2.5rem; }
+  @media (max-width: 768px) {
+    /* line 137, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+    .header h1 {
+      font-size: 1.8rem; } }
+
+/* line 146, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+.content {
+  width: 100%;
+  position: absolute;
+  top: 15vh;
+  height: 55vh;
+  text-align: center; }
+
+/* line 154, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+.chord {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 100%;
+  font-size: 10rem; }
+  @media (max-width: 768px) {
+    /* line 154, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+    .chord {
+      font-size: 5rem; } }
+
+/* line 165, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+.instructions {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 100%;
+  font-style: italic; }
+
+/* line 172, /Users/iMilan/DEV/PROJECTS/Chord practicer/css/style.scss */
+.controls {
+  padding: 0 1rem;
+  position: absolute;
+  top: 70vh;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #e6e6e6; }
+
+/*# sourceMappingURL=style.css.map */

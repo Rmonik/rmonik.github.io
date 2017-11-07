@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="helpwindowbutton">?</div>
+        <div class="helpwindow">
+            <h1>Tips</h1>
+            <ul class="helpwindow__tips">
+                <li>
+                    I've created this tool to help me train every possible chord instantly without relying on muscle memory from familiar songs or circle-of-fifths runs. 
+                </li>
+                <li>
+                    You can set the BPM on your metronome to the value next to the timer box to match the tempo. Starting it a beat late works best to give you time to figure out the chord. (press a key or click to restart the timer)
+                </li>
+                <li>
+                    Avoid just playing the triad in a closed position. Playing the bass in the left hand, and the third and seventh (+ extensions) and omitting the fifth in the right hand is a good way to learn the chords in a more open voicing. 
+                </li>
+                <li>
+                    Another good way is by playing walking bass patterns in the left hand playing rootless voicings in the right hand. 
+                </li>
+                <li>
+                    When using scale mode, just playing II-V-Is can help you figure them out faster. 
+                </li>
+                
+            </ul>
+        </div>
+        <div class="mainpage">
+            <div class="header">
+                <h1>
+                    Chord &amp; Scale Practice Tool
+                </h1>
+            </div>
+            <div class="content">
+                <div class="chord">
+                    
+                </div>
+                <div class="instructions">
+                    <p>
+                        Press any key, click or enable timer based chord generation
+                    </p>
+                </div>
+            </div>
+            <div class="controls">
+                <form class="options">
+                    <p><input class="options__timer" type="checkbox" /> Automatically transition to next chord every
+                        <select class="options__timeset">
+                            <option value="1">1s</option>
+                            <option value="2">2s</option>
+                            <option value="3">3s</option>
+                            <option value="4">4s</option>
+                            <option selected="selected" value="6">6s</option>
+                            <option value="8">8s</option>
+                            <option value="10">10s</option>
+                        </select>
+                        <span class="options__BPM">
+                            (80 BPM)
+                        </span>
+                    </p>
+                    <p>
+                        <input class="options__sevenchords" type="checkbox" checked="checked"/> Include 7th
+                    </p>
+                    <p>
+                        <input class="options__extensions" type="checkbox" /> Include extensions
+                    </p>
+                    <p>
+                        <input class="options__scales" type="checkbox" /> Scale mode 
+                    </p>
+                    <p>
+                        <input class="options__extra" type="checkbox" disabled="disabled"/> Diatonic mode (soon)
+                    </p>
+                </form>
+            </div>
+            <div class="footer">
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/lib/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
